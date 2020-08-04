@@ -17,7 +17,10 @@ heap_t *heap_insert(heap_t **root, int value)
 	if (!new)
 		return (NULL);
 
-	
+	new->n = value;
+	new->left = NULL;
+	new->right = NULL;
+	new->parent = *root;
 
 	return (new);
 }
