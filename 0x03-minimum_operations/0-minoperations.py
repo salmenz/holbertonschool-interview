@@ -12,7 +12,7 @@ def minOperations(n):
     if not isinstance(n, int):
         return 0
     if n <= 0:
-        return n
+        return 0
     while n != h:
         if n % h == 0:
             r += 2
