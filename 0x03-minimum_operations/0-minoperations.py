@@ -9,7 +9,9 @@ def minOperations(n):
     b = 1
     r = 0
     h = 1
-    if n == 0:
+    if not isinstance(n, int):
+        return 0
+    if n <= 0:
         return n
     while n != h:
         if n % h == 0:
