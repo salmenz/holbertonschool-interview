@@ -9,6 +9,8 @@ def minOperations(n):
     b = 1
     r = 0
     h = 1
+    if n == 0:
+        return n
     while n != h:
         if n % h == 0:
             r += 2
