@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "lists.h"
 /**
  * is_palindrome - check if the list is palindrome or not
