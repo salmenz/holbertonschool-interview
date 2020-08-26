@@ -3,7 +3,7 @@
 /**
  * is_palindrome - check if the list is palindrome or not
  * @head: the head of the list
- * Return: 1 of palindrome and 0 otherways
+ * Return: 1 if palindrome and 0 otherways
  */
 int is_palindrome(listint_t **head)
 {
