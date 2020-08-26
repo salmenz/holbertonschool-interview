@@ -8,38 +8,16 @@
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *cur, *deb, *fin;
-	int d = 0, f, i, j, len = 0, r = 1;
+	int d = 0, f = -1, r = 1, tab[2069];
 
-	if (head == NULL)
-		return (r);
-	cur = *head;
-	while (cur)
+	while (*head)
 	{
-		len++;
-		cur = cur->next;
+		f++;
+		tab[f] = (*head)->n;
+		*head = (*head)->next;
 	}
-	f = len - 1;
-	while (f > d && r == 1)
-	{
-		deb = *head;
-		fin = *head;
-		i = 0;
-		j = 0;
-		while (i < f)
-		{
-			fin = fin->next;
-			i++;
-		}
-		while (j < d)
-		{
-			deb = deb->next;
-			j++;
-		}
-		if (deb->n != fin->n)
+	while (--f > ++d && r == 1)
+		if (tab[d] != tab[f])
 			r = 0;
-		d++;
-		f--;
-	}
 	return (r);
 }
