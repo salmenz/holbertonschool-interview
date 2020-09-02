@@ -25,4 +25,3 @@ finally:
     for j in range(len(status)):
         if nb[j] != 0:
             print("{}: {}".format(status[j], nb[j]))
-            
