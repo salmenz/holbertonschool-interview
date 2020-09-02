@@ -10,9 +10,10 @@ try:
     for l in sys.stdin:
         i += 1
         x = l.split(" ")
-        tot += int(x[-1])
-        if int(x[-2]) in status:
-            nb[status.index(int(x[-2]))] += 1
+        if len(x) > 2:
+            tot += int(x[-1])
+            if int(x[-2]) in status:
+                nb[status.index(int(x[-2]))] += 1
         if i % 10 == 0:
             print("File size:", tot)
             for j in range(len(status)):
