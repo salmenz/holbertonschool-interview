@@ -9,7 +9,7 @@
  */
 int is_palindrome(unsigned long n)
 {
-	char c[100];
+	char c[30];
 	int i, j = 0, b = 1;
 
 	sprintf(c, "%lu", n);
