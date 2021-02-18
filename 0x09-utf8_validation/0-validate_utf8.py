@@ -1,28 +1,29 @@
-#!/usr/binary/python3
+#!/usr/bin/python3
 """
 UTF-8 Validator Module
 """
 
 
 def validUTF8(data):
-    nb_bytes = 0
-    for i in data:
-        binary = format(i, '#010b')[-8:]
-        if nb_bytes == 0:
-            for bit in binary:
+    num_bytes = 0
+    for integer in data:
+        bin = format(integer, '#010b')[-8:]
+        print (bin)
+        if num_bytes == 0:
+            for bit in bin:
                 if bit == "0":
                     break
-                nb_bytes += 1
+                num_bytes += 1
 
-            if nb_bytes == 0:
+            if num_bytes == 0:
                 continue
 
-            if nb_bytes > 4 or nb_bytes == 1:
+            if num_bytes > 4 or num_bytes == 1:
                 return False
         else:
-            if binary[0] != "1" or binary[1] != "0":
+            if bin[0] != "1" or bin[1] != "0":
                 return False
 
-        nb_bytes -= 1
+        num_bytes -= 1
 
-    return nb_bytes == 0
+    return num_bytes == 0
