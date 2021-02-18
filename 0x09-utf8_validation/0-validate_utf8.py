@@ -1,5 +1,7 @@
 #!/usr/binary/python3
-"""UTF-8 Validator Module"""
+"""
+UTF-8 Validator Module
+"""
 
 
 def validUTF8(data):
