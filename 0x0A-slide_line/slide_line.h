@@ -1,5 +1,5 @@
-#ifndef SLIDE_LINE_H
-#define SLIDE_LINE_H
+#ifndef HEADER
+#define HEADER
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -13,4 +13,4 @@ int right_s(int *line, size_t size);
 int left_s(int *line, size_t size);
 int left_d(int *line, size_t size);
 
-#endif SLIDE_LINE_H
+#endif
