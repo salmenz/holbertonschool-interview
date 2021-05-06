@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Count it!"""
-from operator import itemgetter
 import requests
 
 
