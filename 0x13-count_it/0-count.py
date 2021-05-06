@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-from requests import get
 """Count it!"""
+from requests import get
+
 
 REDDIT = "https://www.reddit.com/"
 HEADERS = {'user-agent': 'my-app/0.0.1'}
