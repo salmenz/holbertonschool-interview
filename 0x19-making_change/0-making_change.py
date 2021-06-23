@@ -5,6 +5,8 @@
 def makeChange(coins, total):
     """determine the fewest number of coins needed
     to meet a given amount total"""
+    if total <= 0:
+        return 0
     s_coins = sorted(coins, reverse=True)
     s = 0
     k = 0
