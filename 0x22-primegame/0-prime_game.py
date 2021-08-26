@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Prime Game"""
 
+
 def isprime(n):
     """determine if a number is prime"""
     for i in range(2, n):
@@ -8,11 +9,13 @@ def isprime(n):
             return False
     return True
 
+
 def delete_numbers(n, num):
     """removing that number and its multiples"""
     for i in range(len(num)):
         if num[i] % n == 0:
             num[i] = 0
+
 
 def isWinner(x, nums):
     """Prime Game"""
